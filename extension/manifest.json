@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Highlighter",
+  "version": "1.0",
+  "description": "Highlights important sentences in articles.",
+  "permissions": ["scripting", "activeTab", "storage", "sidePanel"],
+  "host_permissions": [
+    "https://www.bbc.com/news/*",
+    "https://www.nytimes.com/*",
+    "https://www.theguardian.com/*",
+    "https://www.washingtonpost.com/*",
+    "https://www.ithacajournal.com/*",
+    "https://www.cnn.com/*",
+    "https://www.forbes.com/sites/*",
+    "https://www.reuters.com/*",
+    "https://www.npr.org/*",
+    "https://www.aljazeera.com/*",
+    "https://www.economist.com/*",
+    "https://www.nbcnews.com/*",
+    "https://medium.com/*",
+    "https://substack.com/*",
+    "file://*/*.html"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.bbc.com/news/*",
+        "https://www.nytimes.com/*",
+        "https://www.theguardian.com/*",
+        "https://www.washingtonpost.com/*",
+        "https://www.ithacajournal.com/*",
+        "https://www.cnn.com/*",
+        "https://www.forbes.com/sites/*",
+        "https://www.reuters.com/*",
+        "https://www.npr.org/*",
+        "https://www.aljazeera.com/*",
+        "https://www.economist.com/*",
+        "https://www.nbcnews.com/*",
+        "https://medium.com/*",
+        "https://substack.com/*",
+        "file://*/*.html"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  }
+}

@@ -1,0 +1,6 @@
+flask
+pdfplumber
+transformers
+torch
+flask-cors
+groq

@@ -1,6 +1,4 @@
-Manifest json has list of websites this extension can be used on. 
-```
-# My Extension
+
 
 This extension allows you to interact with specific websites listed in the `manifest.json` file.
 
@@ -41,6 +39,10 @@ chrome://extensions/
 ```
 
 2. **Enable Developer Mode:**  Turn on the "Developer mode" toggle switch in the top-right corner.
+
+
+Manifest json has list of websites this extension can be used on. You can edit this to give access to other websites. 
+
 
 3. **Load unpacked:** Click the "Load unpacked" button and select the extension folder within this repository.
 

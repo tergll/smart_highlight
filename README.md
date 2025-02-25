@@ -1,7 +1,4 @@
 
-
-This extension allows you to interact with specific websites listed in the `manifest.json` file.
-
 ## Setup
 
 1. **Create a virtual environment:**
